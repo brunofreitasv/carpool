@@ -6,10 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="UoW\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Carpool.Application.Abstractions\Carpool.Application.Abstractions.csproj" />
   </ItemGroup>
 

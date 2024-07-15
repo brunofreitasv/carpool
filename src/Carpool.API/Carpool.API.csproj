@@ -6,8 +6,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Ardalis.ApiEndpoints" Version="4.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.6" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Carpool.Gateway\Carpool.Gateway.csproj" />
+    <ProjectReference Include="..\Carpool.Application.Abstractions\Carpool.Application.Abstractions.csproj" />
+    <ProjectReference Include="..\Carpool.Application\Carpool.Application.csproj" />
+    <ProjectReference Include="..\Carpool.Data.InMemory\Carpool.Data.InMemory.csproj" />
+    <ProjectReference Include="..\Carpool.Data\Carpool.Data.csproj" />
   </ItemGroup>
 
 </Project>

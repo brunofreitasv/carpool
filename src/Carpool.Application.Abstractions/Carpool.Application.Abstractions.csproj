@@ -6,10 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\" />
     <Folder Include="UoW\" />
-    <Folder Include="Queries\" />
-    <Folder Include="Repositories\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Carpool.Application.DTOs\Carpool.Application.DTOs.csproj" />
+    <ProjectReference Include="..\Carpool.Domain\Carpool.Domain.csproj" />
   </ItemGroup>
 
 </Project>

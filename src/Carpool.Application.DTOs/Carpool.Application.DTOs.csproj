@@ -6,8 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Inputs\" />
-    <Folder Include="Outputs\" />
+    <ProjectReference Include="..\Carpool.Domain\Carpool.Domain.csproj" />
   </ItemGroup>
 
 </Project>

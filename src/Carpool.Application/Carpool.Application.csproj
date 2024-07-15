@@ -6,9 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\" />
-    <Folder Include="Queries\" />
-    <Folder Include="Repositories\" />
+    <ProjectReference Include="..\Carpool.Application.Abstractions\Carpool.Application.Abstractions.csproj" />
+    <ProjectReference Include="..\Carpool.Domain\Carpool.Domain.csproj" />
   </ItemGroup>
 
 </Project>
