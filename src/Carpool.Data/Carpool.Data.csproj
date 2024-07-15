@@ -15,4 +15,8 @@
     <Folder Include="Repositories\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Carpool.Application.Abstractions\Carpool.Application.Abstractions.csproj" />
+  </ItemGroup>
+
 </Project>

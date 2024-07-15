@@ -16,6 +16,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\src\Carpool.Application.Abstractions\Carpool.Application.Abstractions.csproj" />
+    <ProjectReference Include="..\..\src\Carpool.Application\Carpool.Application.csproj" />
+    <ProjectReference Include="..\..\src\Carpool.Data.InMemory\Carpool.Data.InMemory.csproj" />
+    <ProjectReference Include="..\..\src\Carpool.Data\Carpool.Data.csproj" />
+    <ProjectReference Include="..\..\src\Carpool.Gateway\Carpool.Gateway.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Using Include="NUnit.Framework" />
   </ItemGroup>
 
