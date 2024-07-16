@@ -6,7 +6,7 @@ namespace Carpool.Application.DTOs.Account
 {
     public static class Mappings
     {
-        public static AccountModel ToAccount(this SignupInput input)
+        public static AccountModel ToDomainModel(this SignupInput input)
         {
             return AccountModel.Create(
                 input.Name,

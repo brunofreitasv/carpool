@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>f7847548-71e7-4eb9-8910-a45d60a6f403</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,11 +13,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Carpool.Gateway\Carpool.Gateway.csproj" />
     <ProjectReference Include="..\Carpool.Application.Abstractions\Carpool.Application.Abstractions.csproj" />
     <ProjectReference Include="..\Carpool.Application\Carpool.Application.csproj" />
-    <ProjectReference Include="..\Carpool.Data.InMemory\Carpool.Data.InMemory.csproj" />
     <ProjectReference Include="..\Carpool.Data\Carpool.Data.csproj" />
+    <ProjectReference Include="..\Carpool.Gateway\Carpool.Gateway.csproj" />
   </ItemGroup>
 
 </Project>
