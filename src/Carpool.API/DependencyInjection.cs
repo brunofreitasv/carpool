@@ -3,9 +3,10 @@ using Carpool.Application.Abstractions.Gateway;
 using Carpool.Application.Abstractions.Queries;
 using Carpool.Application.Abstractions.Repositories;
 using Carpool.Application.Commands.Account;
-using Carpool.Data.InMemory.Queries;
-using Carpool.Data.InMemory.Repositories;
+using Carpool.Data.Queries;
+using Carpool.Data.Repositories;
 using Carpool.Gateway.Mailer;
+using Microsoft.EntityFrameworkCore;
 
 namespace Carpool.API
 {
@@ -23,17 +24,17 @@ namespace Carpool.API
 
         public static void AddQueries(this IServiceCollection services)
         {
-            services.AddScoped<IAccountQueries, AccountInMemoryQueries>();
+            services.AddScoped<IAccountQueries, AccountQueries>();
         }
 
         public static void AddRepositories(this IServiceCollection services)
         {
-            services.AddScoped<IAccountRepository, AccountInMemoryRepository>();
+            services.AddScoped<IAccountRepository, AccountRepository>();
         }
 
-        public static void AddDbContext(this IServiceCollection services)
+        public static void AddDbContext(this IServiceCollection services, string connectionString)
         {
-            services.AddSingleton<Data.InMemory.Context>();
+            services.AddDbContext<Data.Context>(opt => opt.UseMySQL(connectionString));
         }
     }
 }

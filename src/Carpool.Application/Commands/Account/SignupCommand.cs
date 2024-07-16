@@ -20,7 +20,7 @@ namespace Carpool.Application.Commands.Account
             if (existingAccount != null)
                 throw new ApplicationException("Account already exists");
 
-            var account = input.ToAccount();
+            var account = input.ToDomainModel();
             await accountRepository.Save(account);
 
             if(mailerGateway != null)
